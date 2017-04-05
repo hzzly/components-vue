@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/pages/Home'
 import Star from '@/pages/Star'
 import DatePicker from '@/pages/DatePicker'
+import AnimationMenu from '@/pages/AnimationMenu'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/datepicker',
       name: 'DatePicker',
       component: DatePicker
+    },
+    {
+      path: '/animationmenu',
+      name: AnimationMenu,
+      component: AnimationMenu
     }
   ]
 })

@@ -6,6 +6,9 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+var VueTouch = require('vue-touch')
+Vue.use(VueTouch, {name: 'v-touch'})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

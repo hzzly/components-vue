@@ -5,6 +5,7 @@ import Star from '@/pages/Star'
 import DatePicker from '@/pages/DatePicker'
 import AnimationMenu from '@/pages/AnimationMenu'
 import TouchLeft from '@/pages/TouchLeft'
+import PullRefresh from '@/pages/PullRefresh'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/touchleft',
       name: 'TouchLeft',
       component: TouchLeft
+    },
+    {
+      path: '/pullrefresh',
+      name: 'PullRefresh',
+      component: PullRefresh
     },
   ]
 })

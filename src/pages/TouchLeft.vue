@@ -1,6 +1,7 @@
 <template>
     <div>
-        <touch-left></touch-left>
+        <button @click="add" class="add-btn">+</button>
+        <touch-left :lists="lists"></touch-left>
     </div>    
 </template>
 
@@ -9,11 +10,24 @@
     export default {
         data() {
             return {
-                
+                lists: [
+					{ text: 'todo1', show: false },
+					{ text: 'todo1', show: false },
+					{ text: 'todo1', show: false },
+					{ text: 'todo1', show: false },
+				]
             }
         },
         components: {
             touchLeft
+        },
+        methods: {
+            add() {
+				let list = {
+					text: 'new todo', show: false
+				}
+				this.lists.push(list)
+			},
         }
     }
 </script>

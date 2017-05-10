@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<button @click="add" class="add-btn">+</button>
 		<transition-group name="slide" tag="ul" class="list-wrapper">
 			<li class="list" v-for="(item, index) in lists" :key="item">
 				<v-touch class="vuetouch" v-on:swipeleft="showBtn(index)" v-on:swiperight="hideBtn(index)">
@@ -17,23 +16,15 @@
 
 <script>
 	export default {
+		props: {
+			lists: Array
+		},
 		data() {
 			return {
-				lists: [
-					{ text: 'todo1', show: false },
-					{ text: 'todo1', show: false },
-					{ text: 'todo1', show: false },
-					{ text: 'todo1', show: false },
-				]
+				
 			}
 		},
 		methods: {
-			add() {
-				let list = {
-					text: 'new todo', show: false
-				}
-				this.lists.push(list)
-			},
 			delList(index) {
 				this.lists.splice(index, 1)
 			},
@@ -41,6 +32,9 @@
 				this.lists[index].show = false
 			},
 			showBtn(index) {
+				this.lists.forEach((item) => {
+					item.show = false
+				})
 				this.lists[index].show = true
 			},
 		}

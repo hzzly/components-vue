@@ -6,6 +6,7 @@ import DatePicker from '@/pages/DatePicker'
 import AnimationMenu from '@/pages/AnimationMenu'
 import TouchLeft from '@/pages/TouchLeft'
 import PullRefresh from '@/pages/PullRefresh'
+import CountDown from '@/pages/CountDown'
 
 Vue.use(Router)
 
@@ -41,5 +42,10 @@ export default new Router({
       name: 'PullRefresh',
       component: PullRefresh
     },
+    {
+      path: '/countdown',
+      name: 'CountDown',
+      component: CountDown
+    }
   ]
 })

@@ -5,6 +5,7 @@
         <router-link to="/animationmenu">右下角小菜单</router-link>
         <router-link to="/touchleft">qq左滑删除组件</router-link>
         <router-link to="/pullrefresh">下拉刷新、上滑加载</router-link>
+        <router-link to="/countdown">天数倒计时、短信发送倒计时</router-link>
     </div>
 </template>
 <script>

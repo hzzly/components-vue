@@ -132,7 +132,7 @@
 				} else {
 					this.downFlag = false;
 				}
-                console.log(e)
+                // console.log(e)
             },
 
             refresh() {

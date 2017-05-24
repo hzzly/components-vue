@@ -149,13 +149,13 @@
 				this.top = 0	              
 			},
             infinite() {
-                this.infiniteLoading = true
+                this.downFlag = true
 				setTimeout(() => {
 					this.onInfinite(this.infiniteDone);
 				}, 2000);
 			},
             infiniteDone() {
-				this.infiniteLoading = false
+				this.downFlag = false
 			}
         },
     }

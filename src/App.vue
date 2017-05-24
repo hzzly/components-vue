@@ -13,6 +13,15 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+    font-size: 62.5%; /*10 ÷ 16 × 100% = 62.5%*/
+}
+body {
+    font-size: 1.4rem; /*1.4 × 10px = 14px */
+}
+h1 { 
+    font-size: 2.4rem; /*2.4 × 10px = 24px*/
+}
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

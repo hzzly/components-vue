@@ -6,7 +6,7 @@
 			</ul>
 		</v-scroll>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
     // html,body,#app {
     //     height: 100%;
     // }

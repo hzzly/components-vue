@@ -19,6 +19,14 @@ export default {
 </script>
 <style lang="scss" scoped>
     .home {
-        
+        a {
+            display: flex;
+            flex-direction: column;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #f7f7f7;
+            text-align: center;
+            cursor: pointer;
+        }
     }
 </style>

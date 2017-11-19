@@ -7,6 +7,9 @@ import AnimationMenu from '@/pages/AnimationMenu'
 import TouchLeft from '@/pages/TouchLeft'
 import PullRefresh from '@/pages/PullRefresh'
 import CountDown from '@/pages/CountDown'
+import SingerList from '@/pages/SingerList'
+import ProgerssBar from '@/pages/ProgerssBar'
+import Swiper from '@/pages/Swiper'
 
 Vue.use(Router)
 
@@ -46,6 +49,21 @@ export default new Router({
       path: '/countdown',
       name: 'CountDown',
       component: CountDown
+    },
+    {
+      path: '/singerlist',
+      name: 'SingerList',
+      component: SingerList
+    },
+    {
+      path: '/progerssbar',
+      name: 'ProgerssBar',
+      component: ProgerssBar
+    },
+    {
+      path: '/swiper',
+      name: 'swiper',
+      component: Swiper
     }
   ]
 })
